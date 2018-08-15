@@ -12,8 +12,6 @@
 		<global.version>0.0.3-SNAPSHOT</global.version>
 		<jackson-version>2.8.8</jackson-version>
 		<hibernate-version>5.2.8.Final</hibernate-version>
-		<inveed-typeutils-version>0.0.3</inveed-typeutils-version>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<modules>
@@ -168,24 +166,14 @@
 			</build>
 		</profile>
 	</profiles>
-
 	<!-- END: Maven build settings -->
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>1.7.12</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${jackson-version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.hibernate.javax.persistence</groupId>
-				<artifactId>hibernate-jpa-2.1-api</artifactId>
-				<version>1.0.0.Final</version>
+				<groupId>net.inveed</groupId>
+				<artifactId>inveed-commons</artifactId>
+				<version>0.0.3</version>
 			</dependency>
 			<dependency>
 				<groupId>net.inveed</groupId>
@@ -193,14 +181,19 @@
 				<version>${global.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson-version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-core</artifactId>
 				<version>${hibernate-version}</version>
 			</dependency>
 			<dependency>
-				<groupId>net.inveed</groupId>
-				<artifactId>inveed-typeutils</artifactId>
-				<version>${inveed-typeutils-version}</version>
+				<groupId>org.hibernate.javax.persistence</groupId>
+				<artifactId>hibernate-jpa-2.1-api</artifactId>
+				<version>1.0.0.Final</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

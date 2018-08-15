@@ -15,10 +15,10 @@ import net.inveed.rest.jpa.annotations.JsonEmbeddedEntity;
 import net.inveed.rest.jpa.jackson.JsonConfiguration.SerializationTheadLocal;
 import net.inveed.rest.jpa.typeutils.EntityTypeExt;
 import net.inveed.rest.jpa.typeutils.JsonTypeExt;
-import net.inveed.typeutils.BeanPropertyDesc;
-import net.inveed.typeutils.BeanTypeDesc;
-import net.inveed.typeutils.JavaTypeDesc;
-import net.inveed.typeutils.JavaTypeRegistry;
+import net.inveed.commons.reflection.BeanPropertyDesc;
+import net.inveed.commons.reflection.BeanTypeDesc;
+import net.inveed.commons.reflection.JavaTypeDesc;
+import net.inveed.commons.reflection.JavaTypeRegistry;
 
 public class EntitySerializationPropertyFilter extends SimpleBeanPropertyFilter {
 	private static final Logger LOG = LoggerFactory.getLogger(EntitySerializationPropertyFilter.class);

@@ -15,9 +15,9 @@ import net.inveed.rest.jpa.annotations.TypeDescriminator;
 import net.inveed.rest.jpa.annotations.TypeDescriminatorField;
 import net.inveed.rest.jpa.jackson.JsonConfiguration.SerializationTheadLocal;
 import net.inveed.rest.jpa.typeutils.EntityTypeExt;
-import net.inveed.typeutils.BeanTypeDesc;
-import net.inveed.typeutils.JavaTypeDesc;
-import net.inveed.typeutils.JavaTypeRegistry;
+import net.inveed.commons.reflection.BeanTypeDesc;
+import net.inveed.commons.reflection.JavaTypeDesc;
+import net.inveed.commons.reflection.JavaTypeRegistry;
 
 public class EntitySerializer extends BeanSerializerBase {
 	private static final long serialVersionUID = -9035067749825063337L;

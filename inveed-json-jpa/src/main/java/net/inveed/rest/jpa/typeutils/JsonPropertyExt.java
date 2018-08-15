@@ -2,8 +2,8 @@ package net.inveed.rest.jpa.typeutils;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import net.inveed.typeutils.BeanPropertyDesc;
-import net.inveed.typeutils.ext.IBeanPropertyExtension;
+import net.inveed.commons.reflection.BeanPropertyDesc;
+import net.inveed.commons.reflection.ext.IBeanPropertyExtension;
 
 public class JsonPropertyExt implements IBeanPropertyExtension {
 	private final BeanPropertyDesc beanProperty;

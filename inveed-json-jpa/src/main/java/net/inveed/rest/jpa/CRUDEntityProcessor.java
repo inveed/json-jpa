@@ -13,7 +13,7 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
 import net.inveed.rest.jpa.typeutils.EntityTypeExt;
-import net.inveed.typeutils.BeanTypeDesc;
+import net.inveed.commons.reflection.BeanTypeDesc;
 
 public class CRUDEntityProcessor {
 

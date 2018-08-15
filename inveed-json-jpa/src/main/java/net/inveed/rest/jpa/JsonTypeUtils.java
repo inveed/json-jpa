@@ -7,11 +7,12 @@ import java.util.UUID;
 import com.fasterxml.jackson.core.JsonParser;
 
 import net.inveed.rest.jpa.typeutils.EntityTypeExt;
-import net.inveed.typeutils.JavaTypeDesc;
-import net.inveed.typeutils.JavaTypeRegistry;
-import net.inveed.typeutils.NativeTypeDesc;
+import net.inveed.commons.reflection.JavaTypeDesc;
+import net.inveed.commons.reflection.JavaTypeRegistry;
+import net.inveed.commons.reflection.NativeTypeDesc;
 
 public class JsonTypeUtils {
+	@SuppressWarnings("deprecation")
 	public static Object getPrimitive(JavaTypeDesc<?> t, JsonParser p) throws IOException {
 		if (t instanceof NativeTypeDesc) {
 			NativeTypeDesc<?> type = (NativeTypeDesc<?>) t;

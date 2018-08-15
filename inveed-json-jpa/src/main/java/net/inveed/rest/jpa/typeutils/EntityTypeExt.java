@@ -14,11 +14,11 @@ import javax.persistence.Table;
 
 import net.inveed.rest.jpa.IEntityInstantiator;
 import net.inveed.rest.jpa.annotations.EntityInstantiator;
-import net.inveed.typeutils.BeanPropertyDesc;
-import net.inveed.typeutils.BeanTypeDesc;
-import net.inveed.typeutils.JavaTypeRegistry;
-import net.inveed.typeutils.TypeUtils;
-import net.inveed.typeutils.ext.IBeanTypeExtension;
+import net.inveed.commons.reflection.BeanPropertyDesc;
+import net.inveed.commons.reflection.BeanTypeDesc;
+import net.inveed.commons.reflection.JavaTypeRegistry;
+import net.inveed.commons.reflection.TypeUtils;
+import net.inveed.commons.reflection.ext.IBeanTypeExtension;
 
 public class EntityTypeExt<T> implements IBeanTypeExtension<T> {
 	private static final HashMap<String, BeanTypeDesc<?>> entityMap = new HashMap<>();

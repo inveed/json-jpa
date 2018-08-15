@@ -2,9 +2,9 @@ package net.inveed.rest.jpa.typeutils;
 
 import java.util.HashMap;
 
-import net.inveed.typeutils.BeanPropertyDesc;
-import net.inveed.typeutils.BeanTypeDesc;
-import net.inveed.typeutils.ext.IBeanTypeExtension;
+import net.inveed.commons.reflection.BeanPropertyDesc;
+import net.inveed.commons.reflection.BeanTypeDesc;
+import net.inveed.commons.reflection.ext.IBeanTypeExtension;
 
 public class JsonTypeExt<T> implements IBeanTypeExtension<T> {
 	private BeanTypeDesc<T> type;

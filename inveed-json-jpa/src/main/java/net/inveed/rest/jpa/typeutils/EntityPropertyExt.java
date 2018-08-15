@@ -8,8 +8,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
 
-import net.inveed.typeutils.BeanPropertyDesc;
-import net.inveed.typeutils.ext.IBeanPropertyExtension;
+import net.inveed.commons.reflection.BeanPropertyDesc;
+import net.inveed.commons.reflection.ext.IBeanPropertyExtension;
 
 
 public class EntityPropertyExt implements IBeanPropertyExtension {

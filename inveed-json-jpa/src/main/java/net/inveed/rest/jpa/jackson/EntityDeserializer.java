@@ -23,10 +23,10 @@ import com.fasterxml.jackson.databind.deser.ResolvableDeserializer;
 import net.inveed.rest.jpa.IEntityInstantiator;
 import net.inveed.rest.jpa.JsonTypeUtils;
 import net.inveed.rest.jpa.typeutils.EntityTypeExt;
-import net.inveed.typeutils.BeanPropertyDesc;
-import net.inveed.typeutils.BeanTypeDesc;
-import net.inveed.typeutils.JavaTypeDesc;
-import net.inveed.typeutils.JavaTypeRegistry;
+import net.inveed.commons.reflection.BeanPropertyDesc;
+import net.inveed.commons.reflection.BeanTypeDesc;
+import net.inveed.commons.reflection.JavaTypeDesc;
+import net.inveed.commons.reflection.JavaTypeRegistry;
 
 
 public class EntityDeserializer extends JsonDeserializer<Object> implements ContextualDeserializer, ResolvableDeserializer{
