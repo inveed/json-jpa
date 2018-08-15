@@ -4,12 +4,12 @@
 	<groupId>net.inveed</groupId>
 	<artifactId>inveed-json-jpa-root</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>Inveed JSON-JPA Root Project</name>
 	<description>Common classes for all other libraries and projects</description>
 	<url>https://github.com/inveed/json-jpa</url>
 	<properties>
-		<global.version>0.0.3</global.version>
+		<global.version>0.0.4-SNAPSHOT</global.version>
 		<jackson-version>2.8.8</jackson-version>
 		<hibernate-version>5.2.8.Final</hibernate-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,7 +22,7 @@
 		<url>https://github.com/inveed/json-jpa</url>
 		<connection>scm:git:git://github.com/inveed/json-jpa.git</connection>
 		<developerConnection>scm:git:git@github.com:inveed/json-jpa.git</developerConnection>
-		<tag>v0.0.3</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<!-- Maven build settings -->
 
