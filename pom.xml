@@ -10,7 +10,7 @@
 	<url>https://github.com/inveed/json-jpa</url>
 	<properties>
 		<global.version>0.0.4-SNAPSHOT</global.version>
-		<jackson-version>2.8.8</jackson-version>
+		<jackson-version>2.9.7</jackson-version>
 		<hibernate-version>5.2.8.Final</hibernate-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -173,7 +173,7 @@
 			<dependency>
 				<groupId>net.inveed</groupId>
 				<artifactId>inveed-commons</artifactId>
-				<version>0.0.3</version>
+				<version>0.0.4</version>
 			</dependency>
 			<dependency>
 				<groupId>net.inveed</groupId>

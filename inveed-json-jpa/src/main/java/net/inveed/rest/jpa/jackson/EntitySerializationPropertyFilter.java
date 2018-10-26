@@ -27,7 +27,10 @@ public class EntitySerializationPropertyFilter extends SimpleBeanPropertyFilter 
 	@Override
 	public void serializeAsField(Object pojo, JsonGenerator jgen, SerializerProvider provider, PropertyWriter writer)
 			throws Exception {
-		
+		if (pojo == null) {
+			super.serializeAsField(pojo, jgen, provider, writer);
+			return;
+		}
 		JavaTypeDesc<?> pojoType = JavaTypeRegistry.getType(pojo.getClass());
 		if (!(pojoType instanceof BeanTypeDesc<?>)) {
 			super.serializeAsField(pojo, jgen, provider, writer);
